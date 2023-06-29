@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labsheet3_Activity2</title>
+</head>
+<body>
+    <script>
+    function checkBothTrue(val1,val2){
+        if(val1 && val2){
+              return true;
+        }
+        else{
+            return false;
+        }
+    }
+    var a=true;
+    var b=false;
+    document.write(checkBothTrue(a,b));
+    
+    function type(a){
+        return typeof(a);
+    }
+    var res1=type(5);
+    document.write("<br>"+res1);
+
+    function getCurrentDate() {
+        var currentDate = new Date();
+        var dataType = typeof currentDate;
+        return dataType;
+    }
+
+    var dateType = getCurrentDate();
+     document.write("<br>",dateType); 
+
+    var str="OceanGate";
+    if(str.length>10){
+           document.write("<br>"+"The string has more than 10 characters.")
+    }
+    else{
+          document.write("<br>"+"The string length is less than 10");
+    }
+
+    </script>
+    
+</body>
+</html>

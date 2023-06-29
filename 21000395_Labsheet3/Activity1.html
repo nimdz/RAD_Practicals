@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labsheet3</title>
+</head>
+<body>
+    <script>
+        function add(s1,s2){
+            return s1.concat(s2);
+        }
+        var text= add("Programmo","Phobia");
+        document.write("Q1"+"<br>"+text+"<br>"+"Q2.a"+"<br>");
+
+        function tolower(s1){
+            return s1.toLowerCase();
+        }
+        var text1=tolower(text);
+        document.write(text1);
+
+        function toUpper(s1){
+            return s1.toUpperCase();
+        }
+        var text2=toUpper(text);
+        document.write("<br> Q2.b <br>"+text2);
+
+        function splitByCommas(string) {
+                    return string.split(",");
+                }
+
+       var inputString = "Programmo,Phobia";
+       var result = splitByCommas(inputString);
+       console.log(result); // Output: [ 'Programmo', 'Phobia' ]
+      
+      /* function findIndex(s1){
+              var index=str.indexOf("Phobia");
+              return index;  
+        }
+        var phobiaindex=findIndex(inputString);
+        document.write(phobiaindex);*/
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labsheet3-Actvity3</title>
+  </head>
+  <body>
+    <script>
+      //Answer for Q3.1
+      const games = ["The Last of Us", "Uncharted", "God of War", "Bloodborne"];
+      document.write(games.indexOf("God of War"));
+
+      //Answer for Q3.2
+      function createMap(keyValuePairs) {
+        var myMap = new Map(keyValuePairs);
+        return myMap;
+      }
+
+      
+      var array = [
+        ["Name", "John"],
+        ["Age", 30],
+        ["City", "Colombo"],
+      ];
+
+      var map = createMap(array);
+      console.log(map);
+
+     //Answer for Q3.3
+      map.delete("Age");
+      console.log(map);
+
+      //Answer for Q3.4
+      const fruits=new Map();
+       fruits.set("apple",5);
+       fruits.set("banana",3);
+       fruits.set("orange",2);
+       console.log(fruits);
+    </script>
+  </body>
+</html>
