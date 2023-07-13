@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labsheet4-Activity2</title>
+</head>
+<body>
+    <script>
+        class Rectrangle{
+         
+            constructor(width,height){
+               this.width=width;
+               this.height=height;
+            }
+            getArea(width,height){
+               let area=this.width*this.height;
+                return area;
+            }
+        }
+        
+        const rec1=new Rectrangle(10,25);
+        const rec2=new Rectrangle(30,20);
+        
+       document.write("The Area of rectangle 1 is "+rec1.getArea());
+        document.write("The Area of rectangle 2 is "+rec2.getArea());
+        </script>
+    
+</body>
+</html>
+

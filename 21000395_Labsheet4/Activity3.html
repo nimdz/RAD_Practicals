@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labsheet4-Activity3</title>
+</head>
+<body>
+  <script>
+    class Dog {
+        constructor(breed, age, color, behave) {
+          this.breed = breed;
+          this.age = age;
+          this.color = color;
+          this.behave = behave;
+        }
+      
+        getBehaviour() {
+          return `${this.breed} is ${this.behave}.`;
+        }
+      }
+      
+      const dog1 = new Dog("Pug", "3 years", "Black", "Sleeping");
+      const dog2 = new Dog("Boxer", "2 years", "White", "Eating");
+      const dog3 = new Dog("Poodle", "1 year", "Brown", "Running");
+      
+      document.write(dog1.age + " " + dog1.getBehaviour());
+    </script>
+  
+</body>
+</html>
